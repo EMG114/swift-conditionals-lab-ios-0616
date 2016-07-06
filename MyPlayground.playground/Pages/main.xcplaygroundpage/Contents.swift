@@ -26,11 +26,15 @@ let b = 32
 */
 // write your code here
 
+a >= b
+
 
 /*: Question 2
 ### 2. Print the result of a modulo b is equal to zero
 */
 // write your code here
+
+a % b == 0
 
 
 /*: Question 3
@@ -38,24 +42,36 @@ let b = 32
 */
 // write your code here
 
+y * b == 0
+
 
 /*: Question 4
 ### 4. Print the inverse of a greater than or equal to b
 */
 // write your code here
 
-
+(1) / a >= b
 
 /*: Question 5
 ### 5. Print "true" if a modulo b is equal to zero
 */
 // write your code here
 
+if (a % b == 0) {
+   print ("true")
+    
+}
+
 
 /*: Question 6
 ### 6. Print "true" if a divided by b is greater than x
 */
 // write your code here
+
+if (a / b > Int(x)){
+    print ("true")
+    
+}
 
 
 
@@ -64,6 +80,11 @@ let b = 32
 */
 // write your code here
 
+if (y / Int(x) > 3){
+    print ("true")
+    
+}
+
 
 
 
@@ -71,6 +92,9 @@ let b = 32
 ### 8. Print "true" if y is greater than x and a divided by b is greater than 9
 */
 // write your code here
+if ( y > Int(x) && a/b > 9){
+    print ("true")
+}
 
 
 
@@ -82,6 +106,11 @@ let b = 32
 
 
 
+func isGreater (m: Int, n: Int)->Bool{
+    if m > n {
+        print ("true")
+    }
+
 
 
 
@@ -89,6 +118,12 @@ let b = 32
 ### 10. write a function "isForceWith" that takes a String argument and returns true if the argument is the name of some whom the force is strong with, otherwise it returns false.  People who have the force are Luke, Leia, Anakin, Obi Wan, Yoda, Vader.
 */
 // write your code here
+
+    func isForceWith(arg1:String)->Bool{
+        if arg1 == "Luke" || arg1 == "Leia" || arg1 == "Anakin" || arg1 == "Obi Wan" || arg1 == "Yoda" || arg1 == "Vader" {
+            print ("true")
+        }
+}
 
 
 
@@ -98,7 +133,12 @@ let b = 32
 // write your code here
 
 
-
+    func transferTenDollars(myAccount: Int, otherAccount: Int) {
+           if otherAccount >= 10 {
+                   myAccount + 10
+                       otherAccount - 10
+               }
+        }
 
 
 /*:
